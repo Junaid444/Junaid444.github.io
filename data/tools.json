@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "date-difference",
+    "title": "Date Difference Calculator",
+    "meta": "Count the exact calendar days between two dates with this free, private date difference calculator.",
+    "summary": "Find how many days separate two calendar dates.",
+    "operation": "date-difference",
+    "inputs": [{"name":"start","label":"Start date","type":"date"},{"name":"end","label":"End date","type":"date"}],
+    "detail": "Compare a start date and an end date to get the number of calendar days between them. The result is a whole number, so it is easy to use for planning, checking a deadline, or understanding how long a period lasted. The dates are compared as calendar dates rather than as moments on a clock."
+  },
+  {
+    "slug": "add-days",
+    "title": "Add Days to a Date",
+    "meta": "Calculate a future or past date by adding a number of calendar days to any starting date.",
+    "summary": "Move forward or backward by a chosen number of days.",
+    "operation": "add-days",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"days","label":"Number of days (negative to go back)","type":"number"}],
+    "detail": "Enter a starting date and a day count to find the resulting calendar date. Positive numbers move forward, while negative numbers move backward, so one calculator handles both directions. This is useful for elapsed-day planning and ordinary calendar arithmetic; it does not skip weekends or public holidays."
+  },
+  {
+    "slug": "subtract-days",
+    "title": "Subtract Days from a Date",
+    "meta": "Work out the calendar date a specified number of days before a date, without counting weekends differently.",
+    "summary": "Find a date a chosen number of days earlier.",
+    "operation": "subtract-days",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"days","label":"Days to subtract","type":"number"}],
+    "detail": "Choose a date and enter how many calendar days to count backward. The result is the earlier date, calculated with the same calendar rules used by browsers. This is helpful for planning lead times or reviewing past periods. Saturdays, Sundays, and holidays count as ordinary days in this calculation."
+  },
+  {
+    "slug": "add-weeks",
+    "title": "Add Weeks to a Date",
+    "meta": "Find the date a chosen number of weeks before or after a starting day.",
+    "summary": "Shift a date by complete seven-day weeks.",
+    "operation": "add-weeks",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"weeks","label":"Weeks to add (negative to go back)","type":"number"}],
+    "detail": "Move a date by a selected number of complete seven-day weeks. A positive amount goes forward and a negative amount goes backward; fractional weeks are not accepted because the result is intended to be a whole calendar date. Since each week contains seven days, the weekday remains the same."
+  },
+  {
+    "slug": "day-of-year",
+    "title": "Day of Year Calculator",
+    "meta": "See the ordinal day number for any date, including the correct leap-year adjustment.",
+    "summary": "Convert a date into its day number within the year.",
+    "operation": "day-of-year",
+    "inputs": [{"name":"date","label":"Date","type":"date"}],
+    "detail": "Find the ordinal day number, from 1 through 365 or 366, for a selected date. The count begins with January 1 as day one, and leap years include February 29 automatically. Ordinal dates can help with schedules, reports, and systems that refer to days by their position in a year."
+  },
+  {
+    "slug": "date-from-day-of-year",
+    "title": "Date from Day of Year",
+    "meta": "Convert a year and ordinal day number into the matching calendar date, with leap years handled.",
+    "summary": "Turn a day-of-year number into a calendar date.",
+    "operation": "date-from-day-of-year",
+    "inputs": [{"name":"year","label":"Year","type":"number"},{"name":"day","label":"Day of year (1-365 or 366)","type":"number"}],
+    "detail": "Enter a year and its ordinal day number to identify the corresponding month and day. The valid range depends on whether that year has 365 or 366 days, and the calculator checks it before converting. This is the reverse of an ordinal-date lookup and is useful when a schedule gives a year plus day number."
+  },
+  {
+    "slug": "weekday",
+    "title": "Day of the Week Finder",
+    "meta": "Find the weekday for any date using the standard Gregorian calendar.",
+    "summary": "Look up which weekday a date falls on.",
+    "operation": "weekday",
+    "inputs": [{"name":"date","label":"Date","type":"date"}],
+    "detail": "Select any date to see its weekday name, such as Monday or Thursday. The result follows the Gregorian calendar used for civil dates in most countries. It can help check a calendar entry, plan an appointment, or answer a quick historical date question without opening a separate calendar."
+  },
+  {
+    "slug": "leap-year",
+    "title": "Leap Year Checker",
+    "meta": "Check whether a year is a leap year under the Gregorian calendar rule.",
+    "summary": "Check whether a year contains February 29.",
+    "operation": "leap-year",
+    "inputs": [{"name":"year","label":"Year","type":"number"}],
+    "detail": "Check whether a selected year has 366 days and includes February 29. The Gregorian rule makes a year leap when it is divisible by four, except century years must also be divisible by 400. This exception is why a year ending in 00 is not automatically a leap year."
+  },
+  {
+    "slug": "days-in-month",
+    "title": "Days in a Month Calculator",
+    "meta": "Get the number of days in a selected month and year, including February in leap years.",
+    "summary": "Check the length of a month in any year.",
+    "operation": "days-in-month",
+    "inputs": [{"name":"year","label":"Year","type":"number"},{"name":"month","label":"Month (1-12)","type":"number"}],
+    "detail": "Choose a year and month number to see how many calendar days that month contains. February is evaluated for the selected year, so leap years return 29 days and other years return 28. This is useful when validating a date, preparing a monthly plan, or checking a recurring schedule."
+  },
+  {
+    "slug": "month-calendar",
+    "title": "Monthly Calendar Generator",
+    "meta": "View a clean text calendar for any month and year, with weekdays aligned correctly.",
+    "summary": "Generate a simple calendar for a selected month.",
+    "operation": "month-calendar",
+    "inputs": [{"name":"year","label":"Year","type":"number"},{"name":"month","label":"Month (1-12)","type":"number"}],
+    "detail": "Generate a compact Monday-first calendar grid for a month and year. Each date appears under its correct weekday, including months that start midweek and leap-year February. The plain-text result is easy to read, copy, or compare with another calendar when checking a plan."
+  },
+  {
+    "slug": "iso-week-number",
+    "title": "ISO Week Number Calculator",
+    "meta": "Find the ISO week number and week-year for a selected calendar date.",
+    "summary": "Look up the ISO 8601 week and week-year.",
+    "operation": "iso-week-number",
+    "inputs": [{"name":"date","label":"Date","type":"date"}],
+    "detail": "Find the ISO 8601 week number for a date, along with its ISO week-year. ISO weeks begin on Monday, and week 1 is the week containing the year's first Thursday. As a result, dates near New Year can belong to the previous or next ISO week-year rather than their calendar year."
+  },
+  {
+    "slug": "age-calculator",
+    "title": "Age Calculator",
+    "meta": "Calculate age in completed years, months, and days between a birth date and a reference date.",
+    "summary": "Calculate elapsed age in years, months, and days.",
+    "operation": "age",
+    "inputs": [{"name":"birth","label":"Birth date","type":"date"},{"name":"asOf","label":"Age on date","type":"date"}],
+    "detail": "Calculate completed years, months, and days from a birth date to a reference date. Select today's date or another date to check age at a particular point in time. Calendar month lengths vary, so the calculator uses calendar components rather than treating every month as a fixed number of days."
+  },
+  {
+    "slug": "next-birthday",
+    "title": "Birthday Countdown Calculator",
+    "meta": "See how many days remain until the next birthday and the date it falls on.",
+    "summary": "Count down to the next birthday from a birth date.",
+    "operation": "birthday-countdown",
+    "inputs": [{"name":"birth","label":"Birth date","type":"date"},{"name":"today","label":"Count from date","type":"date"}],
+    "detail": "Enter a birth date and the date to count from to find the next birthday and the remaining number of days. If the birthday is today, the countdown is zero; if it has passed this year, the next occurrence is used. For a February 29 birthday in a non-leap year, this tool observes February 28."
+  },
+  {
+    "slug": "days-until",
+    "title": "Days Until a Date",
+    "meta": "Count calendar days from a chosen starting date until an upcoming event or deadline.",
+    "summary": "Measure the days remaining until a target date.",
+    "operation": "days-until",
+    "inputs": [{"name":"from","label":"Count from","type":"date"},{"name":"target","label":"Target date","type":"date"}],
+    "detail": "Count calendar days between a chosen reference date and a target date. The result is signed: upcoming targets produce a positive count, the same date produces zero, and past targets produce a negative count. Pick today's date as the reference to get a simple countdown to an event or deadline."
+  },
+  {
+    "slug": "business-days-between",
+    "title": "Business Days Between Dates",
+    "meta": "Count weekdays between two dates, excluding Saturdays and Sundays but not public holidays.",
+    "summary": "Count Monday-through-Friday dates in a range.",
+    "operation": "business-days-between",
+    "inputs": [{"name":"start","label":"Start date","type":"date"},{"name":"end","label":"End date","type":"date"}],
+    "detail": "Count weekdays in a date range while leaving Saturdays and Sundays out. The range is inclusive of both endpoints, so a weekday start or end date is counted. Public holidays are not removed because their dates depend on a country, region, and year; check local calendars before using the result for official scheduling."
+  },
+  {
+    "slug": "add-business-days",
+    "title": "Add Business Days to a Date",
+    "meta": "Move forward or backward by weekdays while skipping Saturday and Sunday.",
+    "summary": "Find a date after a number of working weekdays.",
+    "operation": "add-business-days",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"days","label":"Weekdays to add (negative to go back)","type":"number"}],
+    "detail": "Move forward or backward by a number of Monday-to-Friday days. The starting date itself is not counted; counting begins on the next date in the chosen direction. Saturdays and Sundays are skipped, but public holidays are not, so use a local holiday calendar for deadlines that depend on a specific jurisdiction."
+  },
+  {
+    "slug": "inclusive-date-range",
+    "title": "Inclusive Date Range Counter",
+    "meta": "Count every calendar date in a range, including both the start date and end date.",
+    "summary": "Count the total dates covered by an inclusive range.",
+    "operation": "inclusive-date-range",
+    "inputs": [{"name":"start","label":"First date","type":"date"},{"name":"end","label":"Last date","type":"date"}],
+    "detail": "Count the dates covered by a range when both the first and last dates are included. For example, a single-day range contains one date, even though the difference between its endpoints is zero days. This convention is useful for event durations, leave periods, and other plans where both boundary days count."
+  },
+  {
+    "slug": "date-to-unix",
+    "title": "Date to Unix Timestamp",
+    "meta": "Convert a calendar date and UTC time into Unix seconds and milliseconds.",
+    "summary": "Convert a UTC date and time to Unix time.",
+    "operation": "date-to-unix",
+    "inputs": [{"name":"datetime","label":"Date and time (UTC)","type":"datetime-local"}],
+    "detail": "Convert a date and clock time entered as UTC into Unix time, the elapsed time since 1970-01-01 00:00:00 UTC. Both seconds and milliseconds are shown because software commonly uses either unit. The input is explicitly UTC; it is not interpreted in your device's local time zone."
+  },
+  {
+    "slug": "unix-to-date",
+    "title": "Unix Timestamp to Date",
+    "meta": "Convert a Unix timestamp in seconds into a readable UTC date and time.",
+    "summary": "Turn Unix seconds into a UTC calendar date.",
+    "operation": "unix-to-date",
+    "inputs": [{"name":"timestamp","label":"Unix timestamp in seconds","type":"number"}],
+    "detail": "Convert a Unix timestamp measured in seconds to a readable UTC date and time. Unix seconds count from the start of 1970 in UTC, so the same number has a consistent meaning regardless of your computer's location. If your source gives milliseconds, use the millisecond converter instead."
+  },
+  {
+    "slug": "unix-milliseconds-to-date",
+    "title": "Unix Milliseconds to Date",
+    "meta": "Convert a Unix timestamp in milliseconds into a readable UTC date and time.",
+    "summary": "Convert epoch milliseconds to a UTC date and time.",
+    "operation": "unix-milliseconds-to-date",
+    "inputs": [{"name":"timestamp","label":"Unix timestamp in milliseconds","type":"number"}],
+    "detail": "Convert a timestamp measured in milliseconds since the Unix epoch into a UTC date and time. JavaScript commonly represents timestamps in milliseconds, while many APIs and command-line tools use seconds. Choosing the correct unit prevents results that appear thousands of years away from the intended date."
+  },
+  {
+    "slug": "duration-converter",
+    "title": "Hours and Minutes Converter",
+    "meta": "Convert a duration in hours and minutes into total minutes and decimal hours.",
+    "summary": "Express a duration as total minutes and decimal hours.",
+    "operation": "duration-converter",
+    "inputs": [{"name":"hours","label":"Hours","type":"number"},{"name":"minutes","label":"Additional minutes","type":"number"}],
+    "detail": "Convert a duration entered as hours and additional minutes into total minutes and decimal hours. The decimal value is useful for timesheets and calculations, while total minutes preserves an exact whole-minute count. This tool converts elapsed duration; it does not represent a time of day or apply time-zone rules."
+  },
+  {
+    "slug": "hours-to-days",
+    "title": "Hours to Days Converter",
+    "meta": "Convert a number of hours into equivalent 24-hour days and remaining hours.",
+    "summary": "Break a duration into complete 24-hour days and hours.",
+    "operation": "hours-to-days",
+    "inputs": [{"name":"hours","label":"Hours","type":"number"}],
+    "detail": "Convert a duration in hours into a 24-hour day equivalent and remaining hours. The result distinguishes full blocks of 24 hours from the remainder, and also gives a decimal-day value for calculations. This is elapsed-time arithmetic, not a way to count calendar dates across daylight-saving changes."
+  },
+  {
+    "slug": "minutes-to-hours",
+    "title": "Minutes to Hours Converter",
+    "meta": "Convert minutes into hours and remaining minutes, plus the equivalent decimal-hour value.",
+    "summary": "Express a minute count as hours and minutes.",
+    "operation": "minutes-to-hours",
+    "inputs": [{"name":"minutes","label":"Minutes","type":"number"}],
+    "detail": "Convert a minute count into complete hours and leftover minutes, with a decimal-hours result for arithmetic. For example, a fractional hour is not the same notation as minutes after the hour, so the decimal value and hours-and-minutes form are both displayed. Use this for durations rather than clock readings."
+  },
+  {
+    "slug": "add-time",
+    "title": "Add Minutes to a Time",
+    "meta": "Add or subtract elapsed minutes from a 24-hour clock time and see the day offset.",
+    "summary": "Shift a clock time by a number of minutes.",
+    "operation": "add-time",
+    "inputs": [{"name":"time","label":"Starting time (24-hour clock)","type":"time"},{"name":"minutes","label":"Minutes to add (negative to subtract)","type":"number"}],
+    "detail": "Shift a 24-hour clock time by a number of minutes, including negative values for subtraction. If the result crosses midnight, the output reports whether it falls on the previous day, the same day, or the next day. Enter only the clock time: this calculator does not infer a date or time zone."
+  },
+  {
+    "slug": "time-difference",
+    "title": "Time Difference Calculator",
+    "meta": "Find the elapsed minutes and hours between two 24-hour clock times, including overnight periods.",
+    "summary": "Measure elapsed time between clock readings.",
+    "operation": "time-difference",
+    "inputs": [{"name":"start","label":"Start time","type":"time"},{"name":"end","label":"End time","type":"time"}],
+    "detail": "Find the elapsed duration between two 24-hour clock readings. When the end time is earlier than the start time, the calculator treats it as an overnight interval ending on the following day. It reports both hours and minutes and total minutes; it does not account for a date change caused by time-zone or daylight-saving rules."
+  },
+  {
+    "slug": "utc-time-zone",
+    "title": "UTC to Time Zone Converter",
+    "meta": "Convert a UTC date and time to a selected time zone using your browser's time-zone data.",
+    "summary": "See a UTC date and time in another time zone.",
+    "operation": "utc-time-zone",
+    "inputs": [{"name":"datetime","label":"Date and time (UTC)","type":"datetime-local"},{"name":"zone","label":"IANA time zone (for example, America/New_York)","type":"text","placeholder":"Europe/Paris"}],
+    "detail": "View a UTC date and time in a named IANA time zone, such as Europe/Paris or America/New_York. The browser's internationalization database applies the zone's offset for the selected date, including daylight-saving transitions where applicable. Enter a standard IANA zone identifier; abbreviations such as EST can be ambiguous."
+  },
+  {
+    "slug": "days-to-weeks",
+    "title": "Days to Weeks Converter",
+    "meta": "Convert a day count into complete seven-day weeks and remaining days.",
+    "summary": "Split a number of days into weeks and extra days.",
+    "operation": "days-to-weeks",
+    "inputs": [{"name":"days","label":"Days","type":"number"}],
+    "detail": "Express a number of days as complete seven-day weeks and remaining days, with a decimal-week equivalent. This is fixed-duration arithmetic: one week is always seven days. It does not account for named calendar weeks or the different conventions that organizations may use for week numbering."
+  },
+  {
+    "slug": "weeks-to-days",
+    "title": "Weeks to Days Converter",
+    "meta": "Convert a number of weeks into its equivalent number of days using seven days per week.",
+    "summary": "Convert complete or fractional weeks to days.",
+    "operation": "weeks-to-days",
+    "inputs": [{"name":"weeks","label":"Weeks","type":"number"}],
+    "detail": "Convert complete or fractional weeks into days using the standard seven-days-per-week relationship. A decimal number of weeks produces a decimal day count, which can be useful for rough duration calculations. For calendar scheduling, use a date calculator because adding a week to a date preserves the weekday."
+  },
+  {
+    "slug": "ordinal-date",
+    "title": "Ordinal Date Formatter",
+    "meta": "Format a selected date as an ISO-style year and day-of-year number.",
+    "summary": "Write a date as a year plus its ordinal day.",
+    "operation": "ordinal-date",
+    "inputs": [{"name":"date","label":"Date","type":"date"}],
+    "detail": "Format a selected calendar date as its four-digit year followed by a three-digit day-of-year number. The ordinal is zero-padded, so dates early in the year remain easy to sort as text. This format is sometimes used in logs, archival records, and technical workflows that need compact date labels."
+  },
+  {
+    "slug": "weekday-count",
+    "title": "Count a Weekday in a Date Range",
+    "meta": "Count how many times a selected weekday occurs in an inclusive date range.",
+    "summary": "Count occurrences of one weekday between two dates.",
+    "operation": "weekday-count",
+    "inputs": [{"name":"start","label":"Start date","type":"date"},{"name":"end","label":"End date","type":"date"},{"name":"weekday","label":"Weekday (0=Sunday, 6=Saturday)","type":"number"}],
+    "detail": "Count occurrences of one chosen weekday in a date range, including both endpoints. Weekday numbers follow the common JavaScript convention: Sunday is 0 and Saturday is 6. This can help estimate recurring weekly events or check a range, but the result is calendar-based and does not exclude holidays."
+  },
+  {
+    "slug": "next-weekday",
+    "title": "Next Weekday Finder",
+    "meta": "Find the next occurrence of a chosen weekday after a selected date.",
+    "summary": "Look up the next selected weekday after a date.",
+    "operation": "next-weekday",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"weekday","label":"Weekday (0=Sunday, 6=Saturday)","type":"number"}],
+    "detail": "Find the next occurrence of a chosen weekday strictly after the selected date. If the starting date already falls on that weekday, the result is seven days later rather than the same date. Weekday numbers use Sunday as 0 through Saturday as 6, matching the convention used by many programming tools."
+  },
+  {
+    "slug": "previous-weekday",
+    "title": "Previous Weekday Finder",
+    "meta": "Find the most recent occurrence of a chosen weekday before a selected date.",
+    "summary": "Look up the previous selected weekday before a date.",
+    "operation": "previous-weekday",
+    "inputs": [{"name":"date","label":"Starting date","type":"date"},{"name":"weekday","label":"Weekday (0=Sunday, 6=Saturday)","type":"number"}],
+    "detail": "Find the most recent occurrence of a chosen weekday strictly before the selected date. If the starting date is already that weekday, the result is one week earlier. Weekday numbers use Sunday as 0 through Saturday as 6, making the input convention predictable for users familiar with JavaScript date APIs."
+  }
+]
