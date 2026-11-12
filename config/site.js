@@ -2,7 +2,7 @@ export const site = {
   name: "Datewise Tools",
   description: "Free, private date and time calculators that run in your browser.",
   contactEmail: "junaidrafishah78@gmail.com",
-  googleSiteVerification: ""
+  googleSiteVerification: "BJGuqZTwFbVS8aP8SvFW_tEbuBXSN3R5l7Tzp0CHBeo"
 };
 
 // Add your ad provider's approved code or publisher IDs here when you have them.
