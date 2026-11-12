@@ -7,8 +7,8 @@ export const site = {
 
 // Add your ad provider's approved code or publisher IDs here when you have them.
 export const ads = {
-  enabled: false,
-  headCode: "",
+  enabled: true,
+  headCode: '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1672869711724907" crossorigin="anonymous"></script>',
   // Paste approved ad-unit HTML snippets here. Leave empty to show labeled placeholders.
   slots: {
     header: "",

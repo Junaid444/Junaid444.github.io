@@ -51,7 +51,7 @@ The `inputs` `name` values must match the keys expected by the selected calculat
 
 All monetization settings live in [`config/site.js`](./config/site.js).
 
-- **Ads:** advertising is off by default. After an ad network approves the site, paste its site-wide script into `ads.headCode` (if required) and each approved ad-unit HTML snippet into `ads.slots.header`, `ads.slots.inContent`, or `ads.slots.footer`, then set `ads.enabled` to `true`. Empty slots remain labeled placeholders. Never paste unapproved scripts or expose private account credentials.
+- **Ads:** the current AdSense site-verification script is in `ads.headCode`; advertising is not approved yet. After Google reviews and approves the site, follow its instructions for any additional ad units or settings. Paste approved unit HTML into `ads.slots.header`, `ads.slots.inContent`, or `ads.slots.footer` only if you use manual placements. Empty slots remain labeled placeholders. Never paste unapproved scripts or expose private account credentials.
 - **Affiliate links:** add relevant `{ "label": "...", "url": "https://..." }` entries to `affiliates.links`. The disclosure configured there is shown next to the links. Only add links that comply with the network's terms and your local disclosure rules.
 - **Contact:** `site.contactEmail` is set to the public contact address chosen for this launch; change it if you want to use another address. The privacy page also describes the hosting and any advertising you actually enable; review it after configuration.
 

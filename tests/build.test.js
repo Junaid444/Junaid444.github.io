@@ -46,5 +46,10 @@ test("static output includes utility pages, assets, and no generated debris", as
   for (const asset of ["site.css", "tool-app.js", "calculations.js"]) {
     await readFile(`dist/assets/${asset}`, "utf8");
   }
+  const homepage = await readFile("dist/index.html", "utf8");
+  assert.match(homepage, /adsbygoogle\.js\?client=ca-pub-1672869711724907/);
+  const privacy = await readFile("dist/privacy/index.html", "utf8");
+  assert.match(privacy, /Google AdSense code/);
+  assert.match(privacy, /policies\.google\.com\/technologies\/ads/);
   assert.ok((await readdir("dist")).includes("index.html"));
 });
