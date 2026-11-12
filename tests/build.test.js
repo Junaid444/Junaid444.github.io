@@ -29,9 +29,11 @@ test("sitemap and robots list generated content and absolute canonical URLs", as
   const tools = JSON.parse(await readFile("dist/tools.json", "utf8"));
   const sitemap = await readFile("dist/sitemap.xml", "utf8");
   const robots = await readFile("dist/robots.txt", "utf8");
+  const siteUrl = new URL(process.env.SITE_URL || "https://example.invalid").origin;
   assert.equal((sitemap.match(/<url>/g) || []).length, tools.length + 4);
-  for (const tool of tools) assert.ok(sitemap.includes(`https://example.invalid/${tool.slug}/`));
-  assert.match(robots, /Sitemap: https:\/\/example\.invalid\/sitemap\.xml/);
+  for (const tool of tools) assert.ok(sitemap.includes(`${siteUrl}/${tool.slug}/`));
+  assert.ok(!sitemap.includes("Junaid444.github.io"), "sitemap host should be normalized");
+  assert.ok(robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`));
 });
 
 test("static output includes utility pages, assets, and no generated debris", async () => {
@@ -39,6 +41,7 @@ test("static output includes utility pages, assets, and no generated debris", as
     const html = await readFile(`dist/${page}/index.html`, "utf8");
     assert.match(html, /<h1>/);
     assert.match(html, /name="description"/);
+    assert.ok(!html.includes("Replace this placeholder email before publishing."));
   }
   for (const asset of ["site.css", "tool-app.js", "calculations.js"]) {
     await readFile(`dist/assets/${asset}`, "utf8");

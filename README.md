@@ -53,7 +53,7 @@ All monetization settings live in [`config/site.js`](./config/site.js).
 
 - **Ads:** advertising is off by default. After an ad network approves the site, paste its site-wide script into `ads.headCode` (if required) and each approved ad-unit HTML snippet into `ads.slots.header`, `ads.slots.inContent`, or `ads.slots.footer`, then set `ads.enabled` to `true`. Empty slots remain labeled placeholders. Never paste unapproved scripts or expose private account credentials.
 - **Affiliate links:** add relevant `{ "label": "...", "url": "https://..." }` entries to `affiliates.links`. The disclosure configured there is shown next to the links. Only add links that comply with the network's terms and your local disclosure rules.
-- **Contact:** replace `site.contactEmail` with an address you control before launch. The privacy page also describes the hosting and any advertising you actually enable; review it after configuration.
+- **Contact:** `site.contactEmail` is set to the public contact address chosen for this launch; change it if you want to use another address. The privacy page also describes the hosting and any advertising you actually enable; review it after configuration.
 
 Ad networks can reject or delay applications, change policies, or require additional disclosures. Affiliate commissions and ad revenue are not guaranteed. Review actual rendered pages and each provider's terms before enabling monetization.
 
