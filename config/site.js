@@ -1,7 +1,7 @@
 export const site = {
   name: "Datewise Tools",
   description: "Free, private date and time calculators that run in your browser.",
-  contactEmail: "hello@example.com",
+  contactEmail: "junaidrafishah78@gmail.com",
   googleSiteVerification: ""
 };
 
